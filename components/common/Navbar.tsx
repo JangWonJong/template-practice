@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import Link from "next/link";
 
 const Navbar = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -66,38 +67,11 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* mobile menu */}
-          <div className="md:hidden flex items-center">
-            <button onClick={() => setMenuToggle(!menuToggle)}>
-              {menuToggle ? (
-                <XIcon className="w-6 h-6" />
-              ) : (
-                <MenuIcon className="w-6 h-6" />
-              )}
-            </button>
-          </div>
+         
         </div>
       </div>
 
-      {/* mobile menu items */}
-      <div className={`${!menuToggle ? "hidden" : ""} md:hidden`}>
-        <a
-          href="/features"
-          className="block py-2 px-4 text-sm hover:bg-gray-200"
-        >
-          User
-        </a>
-        <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-          Post
-        </a>
-
-        <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-          Login
-        </a>
-        <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-          Signup
-        </a>
-      </div>
+      
     </nav>
   );
 };
