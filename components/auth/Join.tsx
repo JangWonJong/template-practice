@@ -3,6 +3,7 @@ import styles from '@/styles/Register.module.css'
 import Link from 'next/link'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
+import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 
 type Props = {
   handleChange : (e : React.FormEvent<HTMLTextAreaElement | HTMLInputElement>) => void
@@ -13,15 +14,15 @@ const Register : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
     return (
         <div className={styles.container}>
           <form onSubmit={handleSubmit}>
-            <h1 >회원 가입</h1>
+            <AssignmentIndIcon fontSize='large'/>
             <div>
-            
+
             <TextField
               margin="normal"
               required
               fullWidth
               name="username"
-              label="아이디"
+              label="ID"
               type="username"
               id="username"
               onChange={handleChange}
@@ -32,7 +33,7 @@ const Register : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
               required
               fullWidth
               name="password"
-              label="비밀번호"
+              label="PW"
               type="password"
               id="password"
               autoComplete="current-password"
@@ -44,7 +45,7 @@ const Register : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
               required
               fullWidth
               id="name"
-              label="닉네임"
+              label="NICKNAME"
               name="nickname"
               autoComplete="nickname"
               onChange={handleChange}
@@ -54,7 +55,7 @@ const Register : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
               required
               fullWidth
               id=""
-              label="이메일"
+              label="EMAIL"
               name="email"
               autoComplete="email"
               onChange={handleChange}
@@ -62,24 +63,21 @@ const Register : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
            
             </div>
             <div>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 1 }}
-            >
-            회원가입
+            <Button variant="contained" component="label">
+            Sign-Up
+            
             </Button>
             </div>
             <div>
+            <Button>
             <Link href='/auth/login' >
                 <h5 style={{ marginTop: "0.5rem",textAlign:"end",color:"#5e5ee6",cursor:"pointer" }}>
-						로그인
+						Move to Login
             </h5>
-            </Link>            
+            </Link> </Button>           
             </div>
             <div>
-                <h5>계속 진행하면 mibot의 서비스 약관 및 개인정보 보호정책에 동의한 것으로 간주됩니다.</h5>
+                <h5>계속 진행하면 MN의 서비스 약관 및 개인정보 보호정책에 동의한 것으로 간주됩니다.</h5>
             </div>
             </form>
         

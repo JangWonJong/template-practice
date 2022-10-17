@@ -5,17 +5,15 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Tailwind CSS Tutorial</title>
+        <title>MN</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="py-32 text-center">
-        <div className="text-4xl  font-extrabold text-gray-700 mb-12">
-          Navbar in Tailwind!
+      <div className="py-20 text-center">
+        <div className="text-4xl  font-extrabold text-gray-700 mb-10">
+          Welcome to MN!
         </div>
-        <div className="text-4xl  font-extrabold text-gray-700 mb-12">
-          Responsive Cards in Tailwind!
-        </div>
+        
       </div>
 
       {/* 카드 전체를 반응형으로 만들기 위한 컨테이너 */}

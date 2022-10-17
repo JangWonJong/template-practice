@@ -5,7 +5,7 @@ export default function Features() {
   return (
     <div>
       <Head>
-        <title>Tailwind CSS Tutorial - Features</title>
+        <title>Your Posts</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -13,7 +13,7 @@ export default function Features() {
         {/* Cards Page - Title */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-6xl text-gray-700 font-semibold">
-            Tailwind Css Responsive Cards
+            Registered Posts
           </h1>
         </div>
 

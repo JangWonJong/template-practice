@@ -3,7 +3,7 @@ import styles from '@/styles/Login.module.css'
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Link from 'next/link';
-
+import LoginIcon from '@mui/icons-material/Login';
 
 
 type Props = {
@@ -19,14 +19,14 @@ const Login : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
   return (
     <div className={styles.container}>
       <form onSubmit={handleSubmit}>
-            <h1 >로그인</h1>
+        <LoginIcon fontSize='large'/>
             <div>
             <TextField 
               margin="normal"
               required
               fullWidth
               id="username"
-              label="아이디"
+              label="ID"
               name="username"
               autoComplete="username" 
               ref = {usernameRef}
@@ -37,7 +37,7 @@ const Login : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
               required
               fullWidth
               name="password"
-              label="비밀번호"
+              label="PW"
               type="password"
               id="password"
               autoComplete="current-password"
@@ -46,33 +46,29 @@ const Login : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
             />
             </div>
             <div>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 1 }}
-            >
-              로그인
+            <Button variant="contained" component="label">
+              <h5 style={{marginTop: "0.2rem",textAlign:"end"}}></h5>
+              Login
             </Button>
             </div>
             <div>
             <Link href='/auth/join' >
-                <h5 style={{ marginTop: "0.5rem",textAlign:"end",color:"#5e5ee6",cursor:"pointer" }}>
-						회원가입
+                <h5 style={{ marginTop: "0.2rem",textAlign:"end",color:"#5e5ee6",cursor:"pointer" }}>
+						Move to Sign-Up
             </h5>
             </Link>
             <Link href="/auth/googleLogin">
                 <Button 
                   fullWidth
-                  variant="contained"
-                  sx={{ mt: 0.5, mb: 0 }}
+                  variant="text"
+                  sx={{  mt: 0.5, mb: 0 }}
                   >
-                  Google 로그인                  
+                 Google-login                 
                 </Button>
             </Link>
             </div>
             <div>
-                <h5>계속 진행하면 mibot의 서비스 약관 및 개인정보 보호정책에 동의한 것으로 간주됩니다.</h5>
+                <h5 style={{ marginTop: "1rem",textAlign:"center",color:"black" }} >welcome to MN</h5>
             </div>
             </form>
         
