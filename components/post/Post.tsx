@@ -36,10 +36,13 @@ const Register : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
               margin="normal"
               required
               fullWidth
+              multiline
+              rows={20}
               name="contents"
               label="내용"
               type="contents"
               id="contents"
+            
               onChange={handleChange}
             />
             </div>

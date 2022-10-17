@@ -32,7 +32,7 @@ export default function Home() {
             </h2>
             <h1 className="text-2xl font-semibold mb-3">타이틀</h1>
             <p className="leading-relaxed mb-3">
-              Hello
+              연습용 홈화면 카드
             </p>
             <div className="flex items-center flex-wrap ">
               <a className="text-indigo-300 inline-flex items-center md:mb-2 lg:mb-0">
