@@ -68,7 +68,7 @@ const Login : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
             </Link>
             </div>
             <div>
-                <h5 style={{ marginTop: "1rem",textAlign:"center",color:"black" }} >welcome to MN</h5>
+                <h5 style={{ marginTop: "1rem",textAlign:"center",color:"black" }} ></h5>
             </div>
             </form>
         
