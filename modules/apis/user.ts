@@ -9,9 +9,6 @@ const headers = {
 }
 
 
-
-
-
 export const userJoinApi = async (
     payload: {
         username: string,

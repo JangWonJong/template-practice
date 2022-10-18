@@ -60,19 +60,30 @@ const Register : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
               autoComplete="email"
               onChange={handleChange}
             />  
-           
             </div>
-            <div>
-            <Button variant="contained" component="label">
-            Sign-Up
             
+            <div>
+            <Button 
+               type="submit"
+               variant="contained"
+               color='inherit'
+               sx={{ mt: 3, mb: 2 }}
+               style={{
+                borderRadius: 35,
+                backgroundColor: "white",
+                padding: "10px 20px",
+                fontSize: "15px"
+               }}            
+            >
+                Sign-Up
             </Button>
             </div>
             <div>
+
             <Button>
             <Link href='/auth/login' >
                 <h5 style={{ marginTop: "0.5rem",textAlign:"end",color:"#5e5ee6",cursor:"pointer" }}>
-						Move to Login
+						    Move to Login
             </h5>
             </Link> </Button>           
             </div>

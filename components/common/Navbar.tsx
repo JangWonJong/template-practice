@@ -46,12 +46,12 @@ const Navbar = () => {
                 Post
               </a>
               <a
-                href="/features"
+                href="/post/features"
                 className="py-5 px-3 text-gray-700 hover:text-gray-900"
               >
                 Yours
               </a>
-              
+
             </div>
           </div>
 

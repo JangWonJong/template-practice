@@ -37,7 +37,7 @@ const Register : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
               required
               fullWidth
               multiline
-              rows={20}
+              rows={10}
               name="contents"
               label="내용"
               type="contents"
@@ -47,14 +47,30 @@ const Register : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
             />
             </div>
             <div>
-            <Button variant="contained" component="label">
+            <Button 
+              type="submit"
+              variant="contained"
+              color='inherit'
+              sx={{ mt: 3, mb: 2 }}
+              style={{
+              borderRadius: 35,
+              backgroundColor: "white",
+              padding: "10px 20px",
+              fontSize: "15px"
+              }}
+            >
             Upload
             </Button>
-            
-            <IconButton color="primary" aria-label="upload picture" component="label">
-            <input hidden accept="image/*" type="file" />
-            <ChatIcon />
+
+            <IconButton 
+              color="primary" 
+              aria-label="upload picture"
+              component="label">
+              <input hidden accept="image/*" type="file" />
+                <ChatIcon />
+                
             </IconButton>
+
             </div>
             <Button>
                 <DeleteIcon/>
