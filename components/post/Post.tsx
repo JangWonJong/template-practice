@@ -6,7 +6,9 @@ import TextField from '@mui/material/TextField';
 import { IconButton } from '@mui/material'
 import ChatIcon from '@mui/icons-material/Chat';
 import DeleteIcon from '@mui/icons-material/Delete'
+import PhotoCameraIcon from '@mui/icons-material/PhotoCamera'; 
 import ContentPasteIcon from '@mui/icons-material/ContentPaste';
+import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 
 type Props = {
   handleChange : (e : React.FormEvent<HTMLTextAreaElement | HTMLInputElement>) => void
@@ -67,14 +69,19 @@ const Register : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
               aria-label="upload picture"
               component="label">
               <input hidden accept="image/*" type="file" />
-                <ChatIcon />
-                
-            </IconButton>
+                <PhotoCameraIcon />
+            </IconButton><DeleteOutlinedIcon/>
 
             </div>
-            <Button>
-                <DeleteIcon/>
+            {/*
+            <Button variant="outlined" startIcon={<DeleteIcon />}>
+               Delete
             </Button>
+            <Button variant="outlined" endIcon={<ChatIcon/>}>
+              <input hidden accept="image/*" type="file" />
+                UPLOAD
+            </Button>
+            */}
             <div>
                         
             </div>
