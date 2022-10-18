@@ -38,6 +38,28 @@ export interface Post {
     contents?: string,
 }
 
+export interface PostState{
+    data: Post[]
+    status: 'idle' | 'loading' | 'failed'
+    isPosted: boolean,
+    error: null,
+    posted: null
+    check: boolean
+}
+
+export interface PostJoinType{
+    type: string
+    payload:{
+        title: string, contents: string
+    }
+}
+
+export interface PostInput{
+    title: string,
+    contents: string
+}
+
+
 /** 
 export interface ImageInput{
     item : string

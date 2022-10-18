@@ -40,7 +40,7 @@ const Navbar = () => {
                 User
               </a>
               <a
-                href="post/postregister"
+                href="/post/postregister"
                 className="py-5 px-3 text-gray-700 hover:text-gray-900"
               >
                 Post
@@ -56,11 +56,11 @@ const Navbar = () => {
 
           {/* secondary nav */}
           <div className="hidden md:flex items-center space-x-1">
-            <a href="auth/login" className="py-5 px-3">
+            <a href="/auth/login" className="py-5 px-3">
               Login
             </a>
             <a
-              href="auth/join"
+              href="/auth/join"
               className="py-2 px-3 bg-yellow-400 hover:bg-yellow-300 text-yellow-900 hover:text-yellow-800 rounded transition duration-300"
             >
               Signup

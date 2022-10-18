@@ -4,7 +4,7 @@ import logger from 'redux-logger'
 import { HYDRATE } from 'next-redux-wrapper';
 
 import userReducer from './slices/user';
-import voiceReducer from './slices/voice'
+import postReducer from './slices/post'
 import rootSaga from '@/modules/sagas';
 import createSagaMiddleware from '@redux-saga/core'
 import { TypedUseSelectorHook, useSelector  } from 'react-redux';
@@ -15,7 +15,7 @@ const sagaMiddleware = createSagaMiddleware()
 
 const combinedReducers = combineReducers({
     user : userReducer,
-    voice : voiceReducer
+    post : postReducer,
 })
 
 const rootReducer = (
