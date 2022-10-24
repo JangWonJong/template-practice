@@ -46,14 +46,27 @@ const Login : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
             />
             </div>
             <div>
-            <Button variant="contained" component="label">
-              <h5 style={{marginTop: "0.2rem",textAlign:"end"}}></h5>
+            <Button
+                type="submit"
+                variant="contained"
+                color='inherit'
+                sx={{ mt: 3, mb: 2 }}
+                style={{
+                borderRadius: 35,
+                backgroundColor: "white",
+                padding: "10px 20px",
+                fontSize: "15px"
+               }}            >
               Login
             </Button>
             </div>
             <div>
             <Link href='/auth/join' >
-                <h5 style={{ marginTop: "0.2rem",textAlign:"end",color:"#5e5ee6",cursor:"pointer" }}>
+                <h5 style={{
+                   marginTop: "0.2rem",
+                   textAlign:"end",
+                   color:"#5e5ee6",
+                   cursor:"pointer",fontSize: 13 }}>
 						Move to Sign-Up
             </h5>
             </Link>
@@ -68,7 +81,7 @@ const Login : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
             </Link>
             </div>
             <div>
-                <h5 style={{ marginTop: "1rem",textAlign:"center",color:"black" }} ></h5>
+                <h5 style={{ marginTop: "13rem",textAlign:"center",color:"black" }} ></h5>
             </div>
             </form>
         

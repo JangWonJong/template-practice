@@ -80,15 +80,30 @@ const Register : React.FC<Props> = ({handleChange, handleSubmit}: Props) =>{
             </div>
             <div>
 
-            <Button>
-            <Link href='/auth/login' >
-                <h5 style={{ marginTop: "0.5rem",textAlign:"end",color:"#5e5ee6",cursor:"pointer" }}>
-						    Move to Login
-            </h5>
-            </Link> </Button>           
+            <Button
+              type="submit"
+              variant="contained"
+              color='inherit'
+              sx={{ mt: 1, mb: 5 }}
+              style={{
+              borderRadius: 35,
+              backgroundColor: "white",
+              padding: "15px 20px",
+              fontSize: "10px"
+              }}  
+             >
+                <Link href='/auth/login' >
+                    <a>Move to Login</a>
+                </Link>
+             </Button>           
             </div>
             <div>
-                <h5>
+                <h5 style={{
+                   marginTop: "0.2rem",
+                   textAlign:"end",
+                   color:"#5e5ee6",
+                   cursor:"pointer",fontSize: 10,
+                    }}>
                   계속 진행하면 MN의 서비스 약관 및 개인정보 보호정책에 동의한 것으로 간주됩니다.
                 </h5>
             </div>
